@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✏️ EDIT: Change the page title below -->
+  <title>Mouli Dharan — UI/UX Designer & Front-End Developer</title>
+  <meta name="description" content="Portfolio of Mouli Dharan, UI/UX Designer and Front-End Developer crafting beautiful digital experiences." />
+  <meta name="author" content="Mouli Dharan" />
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- GSAP (animations) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       CUSTOM CURSOR
+       ===================================================================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- =====================================================================
+       SCROLL PROGRESS BAR
+       ===================================================================== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- =====================================================================
+       NAVIGATION
+       ===================================================================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <!-- ✏️ EDIT: Change your initials/logo text -->
+      <span>MD</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#projects" class="nav__link">Projects</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- =====================================================================
+       SECTION 1: HERO
+       ===================================================================== -->
+  <section class="hero" id="home">
+    <!-- Animated background grid -->
+    <div class="hero__grid"></div>
+    <!-- Glowing orbs -->
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+
+    <div class="hero__content">
+      <!-- ✏️ EDIT: Change availability status -->
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Available for work
+      </div>
+
+      <h1 class="hero__name">
+        <!-- ✏️ EDIT: Change your name -->
+        <span class="hero__name-line" data-text="Mouli">Mouli</span>
+        <span class="hero__name-line hero__name-line--accent" data-text="Dharan">Dharan</span>
+      </h1>
+
+      <p class="hero__title">
+        <!-- ✏️ EDIT: Change your role -->
+        UI/UX Designer <span class="hero__title-sep">&amp;</span> Front‑End Developer
+      </p>
+
+      <p class="hero__description">
+        <!-- ✏️ EDIT: Change your tagline -->
+        I craft interfaces that feel as good as they look — blending thoughtful design with precise engineering.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">
+          View Work
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 2: ABOUT
+       ===================================================================== -->
+  <section class="about" id="about">
+    <div class="container">
+
+      <div class="section-label reveal-up">About</div>
+
+      <div class="about__layout">
+        <div class="about__left">
+          <h2 class="about__heading reveal-up">
+            Designing with<br/>
+            <em>intent.</em> Building<br/>
+            with <em>precision.</em>
+          </h2>
+        </div>
+
+        <div class="about__right">
+          <p class="about__text reveal-up">
+            <br>
+            <!-- ✏️ EDIT: Change your personal bio -->
+            Hey! I'm Mouli — a UI/UX designer and front-end developer based in India. I believe great products are born at the intersection of beautiful design, solid engineering, and deep domain understanding.</p>
+          <p class="about__text reveal-up">
+            <!-- ✏️ EDIT: Change your story -->
+            What sets me apart is where I come from. Before transitioning into design, I spent 1.5 years in the healthcare sector at Cognizant — which gave me something most designers don't have: real-world insight into high-stakes user environments, complex workflows, and the cost of getting UX wrong. That experience now shapes how I approach every design problem, whether it's health tech or beyond.
+I craft pixel-perfect interfaces and seamless user journeys, and I bring the technical depth to see them through from wireframe to working product. </p>
+<a href="../FInal portfolio/Mouli dharan resume .pdf" class="btn btn--ghost" download>Download resume</a>
+         <!-- <div class="about__stats reveal-up">
+            <div class="about__stat"> -->
+              <!-- ✏️ EDIT: Change stat number -->
+              <!-- <span class="about__stat-num" data-target="20">0</span>+
+              <span class="about__stat-label">Projects</span>
+            </div> -->
+            <!-- <div class="about__stat">
+              <span class="about__stat-num" data-target="3">0</span>+
+              <span class="about__stat-label">Years Exp.</span>
+            </div> -->
+            <!-- <div class="about__stat">
+              <span class="about__stat-num" data-target="15">0</span>+
+              <span class="about__stat-label">Happy Clients</span>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 3: PROJECTS
+       To add a new project: copy one .project-card block and fill in details.
+       ===================================================================== -->
+  <section class="projects" id="projects">
+    <div class="container">
+
+      <div class="section-label reveal-up">Work</div>
+      <h2 class="projects__heading reveal-up">Selected Projects</h2>
+
+      <div class="projects__grid">
+
+        <!-- ── PROJECT 1 ────────────────────────────────────────────────── -->
+        <!-- ✏️ EDIT: Replace all placeholder content below -->
+        <div class="project-card reveal-up" data-index="01">
+          <div class="project-card__inner">
+            <div class="project-card__top">
+              <span class="project-card__number">01</span>
+              <div class="project-card__tags">
+                <!-- ✏️ EDIT: Change tools used -->
+                <span>Figma</span>
+                <span>Adobe photoshop</span>
+                <span>miro</span>
+              </div>
+            </div>
+            <div class="project-card__image">
+              <!-- ✏️ EDIT: Replace with actual screenshot <img src="assets/project1.jpg" alt="Project 1"> -->
+               <img src="../FInal portfolio/vetsreach.png" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- <div class="project-card__placeholder">
+                <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                  <rect x="8" y="8" width="64" height="44" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                  <rect x="16" y="16" width="20" height="14" rx="2" fill="currentColor" opacity="0.3"/>
+                  <rect x="44" y="16" width="20" height="6" rx="1" fill="currentColor" opacity="0.2"/>
+                  <rect x="44" y="26" width="12" height="4" rx="1" fill="currentColor" opacity="0.15"/>
+                  <rect x="16" y="38" width="48" height="4" rx="1" fill="currentColor" opacity="0.1"/>
+                </svg>
+              </div> -->
+            </div>
+            <div class="project-card__body">
+              <!-- ✏️ EDIT: Change project title -->
+              <h3 class="project-card__title">VETSSREACH</h3>
+              <!-- ✏️ EDIT: Change project description -->
+              <p class="project-card__desc">VETSSREACH is a mobile application that allows pet owners to easily discover veterinary doctors, view services, check availability, book appointments, and manage pet health records—all in one centralized platform designed specifically for the needs of pet owners.</p>
+            </div>
+            <div class="project-card__actions">
+              <!-- ✏️ EDIT: Change href to actual links -->
+              <a href="https://www.behance.net/gallery/248591383/VETSSREACH-Vetnery-app-Uiux-design-and-case-study" class="btn btn--small btn--primary" target="_blank" rel="noopener">See project</a>
+              <!-- <a href="#" class="btn btn--small btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 2 ────────────────────────────────────────────────── -->
+        <div class="project-card reveal-up" data-index="02">
+          <div class="project-card__inner">
+            <div class="project-card__top">
+              <span class="project-card__number">02</span>
+              <div class="project-card__tags">
+                <span>Figma</span>
+                <span>Adobe photoshop</span>
+               
+              </div>
+            </div>
+            <div class="project-card__image">
+                             <img src="../FInal portfolio/digiyatra.png" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- <div class="project-card__placeholder">
+                 <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+                  <!-- <circle cx="40" cy="28" r="16" stroke="currentColor" stroke-width="1.5"/> -->
+                  <!-- <circle cx="40" cy="28" r="8" fill="currentColor" opacity="0.2"/> -->
+                  <!-- <rect x="10" y="48" width="60" height="4" rx="2" fill="currentColor" opacity="0.1"/> -->
+                  <!-- <path d="M24 28 L40 12 L56 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg> 
+              </div> -->
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">DIGIYATRA - APP REDESIGN</h3>
+              <p class="project-card__desc">DigiYatra is a digital platform that enables seamless airport entry using facial recognition. However, the current experience lacks clarity and ease of use, especially for first-time users.
+This project focuses on redesigning the app to make it simple, intuitive, and user-friendly.</p>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://www.behance.net/gallery/248591959/DIGIYATRA-app-Redesign-UI-Redesign-and-Case-study" class="btn btn--small btn--primary" target="_blank" rel="noopener">See project</a>
+              <!-- <a href="#" class="btn btn--small btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a> -->
+            </div>
+          </div>
+        </div>
+        <!-- ── PROJECT 3 ────────────────────────────────────────────────── -->
+        <div class="project-card reveal-up" data-index="03">
+          <div class="project-card__inner">
+            <div class="project-card__top">
+              <span class="project-card__number">03</span>
+              <div class="project-card__tags">
+                <span>Adobe photoshop</span>
+                <span>Adobe illustrator</span> 
+                 <!-- <span>Adobe photoshop</span> -->
+                 <!-- <span>miro</span> -->
+                <!-- <span>GSAP</span> -->
+              </div>
+            </div>
+            <div class="project-card__image">
+               <img src="../FInal portfolio/northface.png" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+
+              <!-- <div class="project-card__placeholder">
+                <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="8" y="12" width="28" height="36" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                  <rect x="44" y="20" width="28" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                  <rect x="14" y="18" width="16" height="10" rx="1" fill="currentColor" opacity="0.25"/>
+                  <rect x="50" y="26" width="16" height="10" rx="1" fill="currentColor" opacity="0.2"/>
+                  <rect x="14" y="32" width="10" height="3" rx="1" fill="currentColor" opacity="0.15"/>
+                </svg>
+              </div> -->
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">The North Face Brand Identity Redesign </h3>
+              <p class="project-card__desc">This project focuses on redesigning the iconic The North Face logo while respecting its strong brand identity. The goal was to modernize the logo to better align with current design trends while retaining its core recognition and outdoor essence.</p>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://www.behance.net/gallery/248592451/The-North-Face-Brand-Identity-Redesign-UIUX-Case-Study" class="btn btn--small btn--primary" target="_blank" rel="noopener">See project</a>
+              <!-- <a href="#" class="btn btn--small btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a> -->
+            </div>
+          </div>
+        </div>
+          <!-- ── PROJECT 4 ────────────────────────────────────────────────── -->
+        <div class="project-card reveal-up" data-index="04">
+          <div class="project-card__inner">
+            <div class="project-card__top">
+              <span class="project-card__number">04</span>
+              <div class="project-card__tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <!-- <span>JS</span> -->
+              </div>
+            </div>
+            <div class="project-card__image">
+               <img src="../FInal portfolio/Leadgen project.png" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+
+              <div class="project-card__placeholder">
+                <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="28" r="16" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="40" cy="28" r="8" fill="currentColor" opacity="0.2"/>
+                  <rect x="10" y="48" width="60" height="4" rx="2" fill="currentColor" opacity="0.1"/>
+                  <path d="M24 28 L40 12 L56 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title"> Landing Page for Lead Gen sofa Website Design</h3>
+              <p class="project-card__desc">A modern sofa landing page focused on lead generation with clean layout and clear call-to-actions. Created during my early HTML and CSS learning phase to practice layout structuring and styling fundamentals.</p>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://moulidharan-30.github.io/Lead-gen/" class="btn btn--small btn--primary" target="_blank" rel="noopener">View site</a>
+              <a href="https://github.com/Moulidharan-30/Lead-gen.git" class="btn btn--small btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+          <!-- ── PROJECT 5 ────────────────────────────────────────────────── -->
+        <div class="project-card reveal-up" data-index="05">
+          <div class="project-card__inner">
+            <div class="project-card__top">
+              <span class="project-card__number">05</span>
+              <div class="project-card__tags">
+                 <span>HTML</span>
+                <span>CSS</span>
+                <!-- <span>JS</span> -->
+              </div>
+            </div>
+            <div class="project-card__image">
+                <img src="../FInal portfolio/yedzi.png" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+
+              <!-- <div class="project-card__placeholder">
+                <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="28" r="16" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="40" cy="28" r="8" fill="currentColor" opacity="0.2"/>
+                  <rect x="10" y="48" width="60" height="4" rx="2" fill="currentColor" opacity="0.1"/>
+                  <path d="M24 28 L40 12 L56 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div> -->
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Yedzi — Modern Bike Website</h3>
+              <p class="project-card__desc">A modern Yedzi bike website design focused on showcasing products with strong visual hierarchy and clean layout. Created during my early HTML and CSS learning phase to practice structuring and styling fundamentals.</p>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://moulidharan-30.github.io/Yedzi/" class="btn btn--small btn--primary" target="_blank" rel="noopener">View site</a>
+              <a href="https://github.com/Moulidharan-30/Yedzi.git" class="btn btn--small btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+          <!-- ── PROJECT 6 ────────────────────────────────────────────────── -->
+        <div class="project-card reveal-up" data-index="06">
+          <div class="project-card__inner">
+            <div class="project-card__top">
+              <span class="project-card__number">06</span>
+              <div class="project-card__tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                 <span>Bootstrap</span> 
+              </div>
+            </div>
+            <div class="project-card__image">
+                              <img src="../FInal portfolio/pp.png" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+
+              <!-- <div class="project-card__placeholder">
+                <svg viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="28" r="16" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="40" cy="28" r="8" fill="currentColor" opacity="0.2"/>
+                  <rect x="10" y="48" width="60" height="4" rx="2" fill="currentColor" opacity="0.1"/>
+                  <path d="M24 28 L40 12 L56 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div> -->
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Paramount Pictures Website Redesign Concept</h3>
+              <p class="project-card__desc">A modern Paramount Pictures website concept focused on cinematic visuals, clean layout, and engaging content presentation. Created during my early HTML, CSS, and Bootstrap learning phase to practice responsive structure and styling fundamentals.</p>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://moulidharan-30.github.io/Paramount-pictures/" class="btn btn--small btn--primary" target="_blank" rel="noopener">View site</a>
+              <a href="https://github.com/Moulidharan-30/Paramount-pictures.git" class="btn btn--small btn--ghost" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✏️ ADD NEW PROJECT: Copy the block above (project-card div) and paste below, update content -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 4: SKILLS
+       ===================================================================== -->
+  <section class="skills" id="skills">
+    <div class="container">
+
+      <div class="section-label reveal-up">Expertise</div>
+      <h2 class="skills__heading reveal-up">Tools &amp; Technologies</h2>
+
+      <div class="skills__layout">
+
+        <!-- UI/UX Tools -->
+        <div class="skills__group reveal-up">
+          <h3 class="skills__group-title">
+            <span class="skills__group-icon">✦</span> UI/UX Design
+          </h3>
+          <div class="skills__tags">
+            <!-- ✏️ EDIT: Add/remove skill tags -->
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe XD</span>
+            <span class="skill-tag">Typography</span>
+            <span class="skill-tag">Graphic design</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Wireframing</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">User Research</span>
+            <span class="skill-tag">Design Systems</span>
+            <span class="skill-tag">Usability Testing</span>
+            <span class="skill-tag">Information Architecture</span>
+            <span class="skill-tag">Adobe Photoshop</span>
+            <span class="skill-tag">Adobe Illustrator</span>
+            <span class="skill-tag">Miro</span>
+            <span class="skill-tag">Framer</span>
+            <span class="skill-tag">Kittl</span>
+            <span class="skill-tag">Stich Ai</span>
+            <span class="skill-tag">Claude design</span>
+          </div>
+        </div>
+
+        <!-- Frontend Development -->
+        <div class="skills__group reveal-up">
+          <h3 class="skills__group-title">
+            <span class="skills__group-icon">⬡</span> Front-End Development
+          </h3>
+          <div class="skills__tags">
+            <!-- ✏️ EDIT: Add/remove skill tags -->
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <!-- <span class="skill-tag">Tailwind CSS</span> -->
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Accessibility</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SECTION 5: CONTACT
+       ===================================================================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <div class="section-label reveal-up">Let's talk</div>
+
+      <div class="contact__layout">
+        <div class="contact__left reveal-up">
+          <h2 class="contact__heading">
+            Got a project<br/>in mind?
+          </h2>
+          <p class="contact__subtext">
+            <!-- ✏️ EDIT: Change your invitation text -->
+            I'm always open to new opportunities, collaborations, and interesting conversations. Drop me a line.
+          </p>
+          <a href="mailto:moulidharan3004@gmail.com" class="contact__email reveal-up">
+            <!-- ✏️ EDIT: Change your email address -->
+            moulidharan3004@gmail.com
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="contact__right reveal-up">
+          <div class="contact__links">
+            <p class="contact__links-label">Find me online</p>
+            <!-- ✏️ EDIT: Change your social links -->
+            <a href="https://www.linkedin.com/in/mouli-dharan-130886272/?skipRedirect=true" class="contact__social-link" target="_blank" rel="noopener">
+              <span>LinkedIn</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2L12 12M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://github.com/Moulidharan-30" class="contact__social-link" target="_blank" rel="noopener">
+              <span>GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2L12 12M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://dribbble.com/moulidharan81114#" class="contact__social-link" target="_blank" rel="noopener">
+              <span>Dribbble</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2L12 12M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://www.behance.net/shivamouliswar1" class="contact__social-link" target="_blank" rel="noopener">
+              <span>Behance</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2L12 12M12 2L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">
+        <!-- ✏️ EDIT: Change copyright year and name -->
+        &copy; 2025 Mouli Dharan. Designed &amp; built with care.
+      </p>
+      <button class="footer__top-btn" id="backToTop" aria-label="Back to top">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M3 8L8 3L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to top
+      </button>
+    </div>
+  </footer>
+
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>
